@@ -4,6 +4,7 @@ import { UsersPage } from "../pages/UsersPage";
 import { Navbar } from "../components/layout/Navbar";
 import { RegisterPage } from "../pages/RegisterPage";
 import { UserProvider } from "../context/UserProvider";
+import { Footer } from "../components/layout/Footer";
 
 export const UserRoutes = () => {
   
@@ -19,6 +20,7 @@ export const UserRoutes = () => {
          <Route path="users/edit/:id" element={<RegisterPage />} />
         <Route path="/" element={<Navigate to={"/users"} />} />
       </Routes>
+      <Footer />
       </UserProvider>
     </>
   );

@@ -1,13 +1,33 @@
-body{
+html, body{
     background-image: url(./assets/campo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .lettersColors{
     color:white;
     text-shadow: 3px 2px 3px black;
 }
+
+.app-container{
+        min-height: 100%;
+        margin-bottom: -60px; /* Altura del footer */
+        padding-bottom: 60px; /* Altura del footer */
+}
+
+.footer {
+    height: 60px; /* Altura del footer */
+    background-color: #282828; /* Color de fondo del footer */
+    text-align: center;
+    padding-top: 20px; /* Espacio interno superior en el footer */
+    color: rgb(204, 193, 193);
+    margin-top: 50%;
+  }
+
+
 .abrir-modal {
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
